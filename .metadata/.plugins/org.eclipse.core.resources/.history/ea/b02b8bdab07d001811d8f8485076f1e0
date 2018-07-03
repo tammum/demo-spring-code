@@ -1,0 +1,20 @@
+package com.batisui.studentDatabase.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.batisui.studentDatabase.mapper.studentTwoMapper;
+import com.batisui.studentDatabase.model.StudentTwo;
+
+@Controller
+public class MainController {
+
+	@Autowired
+	studentTwoMapper studenttwomapper;
+	@GetMapping(value="/home")
+	public String showInsertPage() {
+		
+		return "home";
+	}
+}

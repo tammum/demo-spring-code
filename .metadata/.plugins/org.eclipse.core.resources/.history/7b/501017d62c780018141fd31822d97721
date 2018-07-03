@@ -1,0 +1,18 @@
+<html>
+<head>
+
+
+</head>
+<body>
+<h1>The Student data has been added to database.</h1><p>
+
+<form action="/index">
+enter student id <input type="text" name="studentid"/><p>
+enter student's first name  <input type="text" name="studentfirstname"/><p>
+enter student's last name <input type="text" name="studentlastname"/><p>
+enter student's yearlevel <input type="text" name="studentyearlevel"/><p>
+<input type="submit" name="datasubmit" value="Store Data"/><p>
+
+</form>
+</body>
+</html>

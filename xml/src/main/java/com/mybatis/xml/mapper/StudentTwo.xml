@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mybatis.xml.studentInterface.StudentInterface">
+
+<insert id="add" parameterType="StudentTwo">
+		INSERT INTO studenttwo (id,name) 
+    	VALUE (#{id},#{name})
+	</insert>
+
+</mapper>

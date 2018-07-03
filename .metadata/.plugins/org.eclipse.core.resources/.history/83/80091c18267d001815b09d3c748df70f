@@ -1,0 +1,14 @@
+<html>
+
+<head>
+
+</head>
+<body>
+this is student insertion page!!
+
+<form action="/insert">
+
+<p>student id: <input type="text" th:field="*{textField}" /></p>
+</form>
+</body>
+</html>

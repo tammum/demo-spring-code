@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>student database</title>
+</head>
+<body>
+this is incert page
+</body>
+</html>

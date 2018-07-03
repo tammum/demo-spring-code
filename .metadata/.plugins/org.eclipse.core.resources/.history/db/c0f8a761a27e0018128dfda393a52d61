@@ -1,0 +1,51 @@
+package com.mybatis.service;
+
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
+import org.mybatis.spring.support.SqlSessionDaoSupport;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mybatis.model.Student;
+import com.mybatis.serviceinterfaces.StudentServiceInterface;
+
+@Service
+public class StudentServiceInterfaceImpl implements StudentServiceInterface {
+
+	@Autowired
+	private SqlSession session;
+	
+	@Override
+	public void add(Student student) {
+		// TODO Auto-generated method stub
+		 session.insert("com.mybatis.serviceinterfaces.StudentServiceInterface.add",student);
+	}
+
+	@Override
+	public void edit(Student student) {
+		// TODO Auto-generated method stub
+		session.update("com.mybatis.serviceinterfaces.StudentServiceInterface.edit",student);
+	}
+
+	@Override
+	public void delete(int studentId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Student getStudent(int studentId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Student> getAllStudent() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+}

@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>all students</title>
+</head>
+<body>
+<table border="1">
+	<th>ID</th>
+	<th> name</th>
+	<tr th:each="student:${studentList}">
+	 <td> "${student.id}"</td>
+	 <td> "${student.name}"</td>
+	</tr>
+</table>
+</body>
+</html>

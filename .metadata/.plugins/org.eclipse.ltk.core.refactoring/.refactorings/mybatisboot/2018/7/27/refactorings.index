@@ -1,0 +1,10 @@
+1530433123732	Delete element
+1530434340232	Rename package 'com.techprimers.mybatis.springbootmybatis'
+1530434384500	Rename package 'com.techprimers.mybatis.springbootmybatis.mapper'
+1530434406572	Rename package 'com.techprimers.mybatis.springbootmybatis.model'
+1530434425884	Rename package 'com.techprimers.mybatis.springbootmybatis.resource'
+1530434529344	Delete element
+1530434795482	Rename type 'UsersMapper'
+1530434875935	Rename type 'UsersResource'
+1530437916216	Rename package 'com.mybatis.mapperInerface'
+1530487574405	Copy compilation unit

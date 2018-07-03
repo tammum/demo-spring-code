@@ -1,0 +1,16 @@
+package com.batispractwo.mapper;
+
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+
+import com.batispractwo.ptwocontroller.model.StudentTwo;
+
+
+
+@Mapper
+public interface studentTwoMapper {
+
+	@Insert("insert into studentTwo(id,name) values(#{id},#{name})")
+	public void insert(StudentTwo student);
+	
+}

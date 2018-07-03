@@ -1,0 +1,43 @@
+package com.batisui.studentDatabase.controller;
+
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.batisui.studentDatabase.mapper.studentTwoMapper;
+import com.batisui.studentDatabase.model.StudentTwo;
+
+@Controller
+public class MainController {
+
+	@Autowired
+	studentTwoMapper studenttwomapper;
+	
+	@GetMapping(value="/insert")
+	public String showInsertPage(Model model) {
+		model.addAttribute("student",new StudentTwo());
+		return "insertPage";
+	}
+	@PostMapping(value="/insert")
+	public String showMessege(@ModelAttribute StudentTwo student,
+			@RequestParam String action,Map<String, Object> map) {
+		studenttwomapper.insert(student);//using field in html to catch the data
+		map.put("student", student);
+		return "insertPage";
+	}
+	//select all
+	@GetMapping(value="/all")
+	public String showingAll(Map<String,Object> map) {
+		StudentTwo student= studenttwomapper.selectAll();
+		map.put("student", student);
+		return "showAll";
+	}
+	
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mybais.service.StudentService">
+	
+	<resultMap id="result" type="student">
+        <result property="id" column="id"/>
+        <result property="firstname" column="firstname"/>
+        <result property="lastname" column="lastname"/>
+        <result property="yearlevel" column="yearlevel"/>
+    </resultMap>
+	
+	<select id="getAllUser" resultMap="result">  
+		SELECT id,firstname,lastname,yearlevel FROM student; 
+	</select>
+	
+	<insert id="saveUser" parameterType="student">
+		INSERT INTO student (id,firstname,lastname,yearlevel) 
+    	VALUE (#{id},#{firstname},#{lastname},#{yearlevel})
+	</insert>
+	
+	<update id="updateUser" parameterType="user"> 
+  		UPDATE student
+  		SET
+  			#{firstname},
+  			#{lastname},
+  			#{yearlevel}
+  		where id = #{id} 
+	</update>
+	
+	<delete id="deleteUser" parameterType="int">
+    	DELETE FROM student
+    	WHERE id = #{id}
+    </delete>
+</mapper>

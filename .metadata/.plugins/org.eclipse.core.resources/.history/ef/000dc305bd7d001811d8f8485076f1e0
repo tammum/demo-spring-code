@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>all students</title>
+</head>
+<body>
+<table border="1">
+	<th>ID</th>
+	<th> name</th>
+	<c:forEach items="${student}" var="student">
+		<tr>
+			<td>${student.studentid}</td>
+			<td>${student.firstname}</td>
+		</tr>
+	</c:forEach>
+</table>
+</body>
+</html>

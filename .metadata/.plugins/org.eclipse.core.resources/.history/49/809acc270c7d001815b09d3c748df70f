@@ -1,0 +1,42 @@
+package com.mybatis.controller;
+
+import com.mybatis.mapperInerface.StudentMapper;
+import com.mybatis.model.Student;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/")
+public class StudentController {
+
+    private StudentMapper studentMapper;
+
+    public StudentController(StudentMapper usersMapper) {
+        this.studentMapper = studentMapper;
+    }
+
+
+    @GetMapping("/all")
+    public List<Student> getAll() {
+        return studentMapper.findAll();
+    }
+
+    @GetMapping("/insert")
+    private String update() {
+
+        Student student = new Student();
+        
+        student.setStudentid(37);
+        student.setFirstname("mr.");
+        student.setLastname("foo");
+        student.setYearlevel(88);
+        studentMapper.insert(student);
+
+        return "insert complete!!!";
+    }
+}

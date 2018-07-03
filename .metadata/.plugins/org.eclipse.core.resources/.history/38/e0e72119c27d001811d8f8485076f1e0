@@ -1,0 +1,28 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>student database</title>
+</head>
+<body>
+<form action="#" th:action="@{/insert}" th:object="${student}" method="POST">
+	      <table>
+	    	<tr><td>student id</td>
+	    	    <td>
+	       <input type="text" th:field="*{id}"/>
+	    	    </td>
+	    	</tr>
+	    	<tr><td></td>
+	    	    <td>
+	       <input type="submit" th:value="delete" name="action"/>
+	    	    </td>
+	    	</tr>
+	    	</table>
+	    	</form>
+	    	
+	    	<p th:text="'deleted id: ' + ${student.id}" />
+	    	<p th:text="'deleted name: ' + ${student.name}" />
+</body>
+</html>

@@ -1,0 +1,18 @@
+package com.batisprac.pone;
+
+import org.apache.ibatis.type.MappedTypes;
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.batisprac.model.StudentTwo;
+
+@MappedTypes(StudentTwo.class)
+@MapperScan("com.batisprac.mapper")
+@SpringBootApplication
+public class PoneApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PoneApplication.class, args);
+	}
+}

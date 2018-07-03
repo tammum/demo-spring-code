@@ -1,0 +1,26 @@
+package com.batisprac.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.batisprac.mapper.studentTwoMapper;
+import com.batisprac.model.StudentTwo;
+
+@RestController
+public class Controller {
+
+	@Autowired
+	private studentTwoMapper studentMapper;
+	
+	@GetMapping(value="/insert")
+	public String showMessege() {
+		StudentTwo student = new StudentTwo();
+		student.setId(3);
+		student.setName("abc");
+		studentMapper.insert(student);
+		System.out.println("insertion complete");
+		return "insertion complete";
+	}
+}

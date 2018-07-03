@@ -1,0 +1,33 @@
+package com.batisui.studentDatabase.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.batisui.studentDatabase.mapper.studentTwoMapper;
+import com.batisui.studentDatabase.model.StudentTwo;
+
+@Controller
+public class MainController {
+
+	@Autowired
+	studentTwoMapper studenttwomapper;
+	@GetMapping(value="/home")
+	public String showInsertPage(Model model) {
+		model.addAttribute("student",new StudentTwo());
+		return "home";
+	}
+	@PostMapping(value="/home")
+	public String showMessege(@ModelAttribute StudentTwo student, BindingResult result, 
+			@RequestParam String action) {
+		if(action=="add")
+		studenttwomapper.insert(student);
+		return "home";
+	}
+	
+}

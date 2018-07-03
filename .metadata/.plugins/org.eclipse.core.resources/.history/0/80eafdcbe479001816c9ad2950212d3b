@@ -1,0 +1,22 @@
+package com.practice.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MainController {
+
+	@RequestMapping("/index")
+	public String showHome() {
+		return "home";
+	}
+	
+	@RequestMapping("/firstpage")
+	public String showfirstPage() {
+		return "firstpage";
+	}
+	@RequestMapping("/secondpage")
+	public String showsecondPage() {
+		return "redirect:home";
+	}
+}

@@ -1,0 +1,21 @@
+package com.mybatis.mapperInerface;
+
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.SelectKey;
+
+import com.mybatis.model.Student;
+
+import java.util.List;
+
+@Mapper
+public interface StudentMapper {
+
+    @Select("select * from student")
+    List<Student> findAll();
+
+    @Insert("insert into student(studentid,firstname,lastname,yearlevel) "
+    		+ "values(#{studentid},#{firstname},#{lastname},#{yearlevel})")
+    String insert(Student student);
+}

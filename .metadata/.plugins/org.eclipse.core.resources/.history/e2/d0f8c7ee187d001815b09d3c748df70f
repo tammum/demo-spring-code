@@ -1,0 +1,8 @@
+package com.batisprac.model;
+
+public class StudentTwo {
+
+	
+	private int id;
+	private String name;
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>student database</title>
+</head>
+<body>
+<form action="#" th:action="@{/home}" th:object="${Student}" method="post">
+ Student's id: <input type="text"/>
+ Student's firstname: <input type="text"/>
+ Student's lastname: <input type="text"/>
+ Student's yearlevel: <input type="text"/>
+</form>
+</body>
+</html>

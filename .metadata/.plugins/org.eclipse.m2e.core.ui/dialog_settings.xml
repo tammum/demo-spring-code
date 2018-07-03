@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\USER\Downloads\Compressed\SpringBootThemeleafDemo-master"/>
+			<item value="C:\Users\USER\Downloads\Compressed\studentDatabase"/>
+			<item value="C:\Users\USER\Downloads\Compressed\ptwocontroller"/>
+			<item value="C:\Users\USER\Downloads\Compressed\pone"/>
+			<item value="C:\Users\USER\Downloads\Compressed\mybatisboot2"/>
+			<item value="C:\Users\USER\Downloads\Compressed\mybatisboot"/>
+			<item value="C:\Users\USER\Downloads\Compressed\spring-boot-mybatis-mysql-example-master"/>
+			<item value="C:\Users\USER\Downloads\Compressed\MyBatisDemo"/>
+			<item value="C:\Users\USER\Downloads\Compressed\Java-myBatis\src"/>
+			<item value="C:\Users\USER\Downloads\Compressed\SpringMyBatis-master"/>
+			<item value="C:\Users\USER\Downloads\Compressed\StudentEnrollmentWithMyBatis-1.7"/>
+			<item value="C:\Users\USER\Downloads\Compressed\mybatistesting"/>
+			<item value="C:\Users\USER\Downloads\Compressed\crud-spring-mvc-mybatis-master"/>
+			<item value="C:\Users\USER\Downloads\Compressed\springriver.mybatis.simple"/>
+			<item value="C:\Users\USER\Downloads\Compressed\CRUDWebSpringHibernate-master"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="E:\tammum islam\studentMybatis"/>
+			<item value="C:\Users\USER\Downloads\Compressed\CRUDWebSpringHibernate-master\CRUDWebAppMavenized"/>
+			<item value="C:\Users\USER\Desktop\step7"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.mybatis.studentMybatis3"/>
+			<item value="com.mybatis.studentMybatis2"/>
+			<item value="com.mybatis.studentMybatis"/>
+			<item value="com.practice.practiceOne"/>
+			<item value="com.database.student.studentdata"/>
+			<item value="com.student.database.studentDatabase"/>
+			<item value="com.new.com."/>
+		</list>
+		<list key="groupId">
+			<item value="com.mybatis"/>
+			<item value="com.practice"/>
+			<item value="com.database.student"/>
+			<item value="com.student.database"/>
+			<item value="com.new"/>
+		</list>
+		<list key="artifactId">
+			<item value="studentMybatis3"/>
+			<item value="studentMybatis2"/>
+			<item value="studentMybatis"/>
+			<item value="practiceOne"/>
+			<item value="studentdata"/>
+			<item value="studentDatabase"/>
+			<item value="com."/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

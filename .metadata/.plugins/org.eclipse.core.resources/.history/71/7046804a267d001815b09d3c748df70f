@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.thymeleaf.org ">
+
+<head>
+
+</head>
+<body>
+this is student insertion page!!
+
+<form action="/insert">
+
+<p>student id: <input type="text" th:field="*{textField}" /></p>
+</form>
+</body>
+</html>
